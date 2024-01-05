@@ -6,7 +6,7 @@
   <link href="https://1370773758.github.io/atom.xml" rel="self"/>
   
   <link href="https://1370773758.github.io/"/>
-  <updated>2022-10-31T14:13:12.504Z</updated>
+  <updated>2023-08-14T00:44:52.877Z</updated>
   <id>https://1370773758.github.io/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pcb无人机</title>
+    <link href="https://1370773758.github.io/2023/08/14/pcb%E6%97%A0%E4%BA%BA%E6%9C%BA/"/>
+    <id>https://1370773758.github.io/2023/08/14/pcb%E6%97%A0%E4%BA%BA%E6%9C%BA/</id>
+    <published>2023-08-14T00:44:52.000Z</published>
+    <updated>2023-08-14T00:44:52.877Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>学习资料</title>
@@ -239,12 +252,12 @@
     <link href="https://1370773758.github.io/2022/03/21/RC%E6%B5%8B%E8%AF%95%E6%97%A5%E5%B8%B8/"/>
     <id>https://1370773758.github.io/2022/03/21/RC%E6%B5%8B%E8%AF%95%E6%97%A5%E5%B8%B8/</id>
     <published>2022-03-21T15:29:19.180Z</published>
-    <updated>2022-10-13T16:14:06.058Z</updated>
+    <updated>2023-08-14T00:51:30.509Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><span id="more"></span><!-- more --><p><img src="/2022/03/21/RC%E6%B5%8B%E8%AF%95%E6%97%A5%E5%B8%B8/R1%E4%BC%A4%E7%97%95%E7%B4%AF%E7%B4%AF.jpg" alt="R1伤痕累累"><br><img src="/2022/03/21/RC%E6%B5%8B%E8%AF%95%E6%97%A5%E5%B8%B8/RC%E6%B7%98%E5%AE%9D%E5%A1%94(%E4%B8%8D%E5%90%88%E6%A0%BC).jpg" alt="RC贵重物资"></p><h3 id="卧龙凤雏"><a href="#卧龙凤雏" class="headerlink" title="卧龙凤雏"></a>卧龙凤雏</h3><video src="/2022/03/21/RC测试日常/蜜汁夹取1.mp4" position="absolute" width="50%" height="50%" controls="controls"></video><video src="/2022/03/21/RC测试日常/蜜汁夹取2.mp4" position="absolute" width="50%" height="50%" controls="controls"></video><h3 id="步兵打球"><a href="#步兵打球" class="headerlink" title="步兵打球"></a>步兵打球</h3><video src="/2022/03/21/RC测试日常/步兵打球.mp4" position="absolute" width="50%" height="50%" controls="controls"></video><h3 id="一代摩擦轮测试"><a href="#一代摩擦轮测试" class="headerlink" title="一代摩擦轮测试"></a>一代摩擦轮测试</h3><video src="/2022/03/21/RC测试日常/一代摩擦轮测试.mp4" position="absolute" width="50%" height="50%" controls="controls"></video><h2 id="比赛结语"><a href="#比赛结语" class="headerlink" title="比赛结语"></a>比赛结语</h2><p>为期一年的比赛生涯在匆忙中也是结束了，全国一等奖，第九名，也是对自己有个交待了，纵使结果的未达最理想的状态，状况百出。队伍之间的问题也是一堆<br>但随着比赛的结束也暂时划上一个句号。<br>赛前都是闭门造车，但好在有和其他几个学校进行交流，勉强在赛前做到一个比较好的状态，这个博客在之前写了好些不满的话语，我也随着删掉了。<br>遗憾的是这次上线上的比赛，但好在没出现过和之前打RCUA那样什么忙都没帮上，这次好歹也是R1主力了。<br><img src="/2022/03/21/RC%E6%B5%8B%E8%AF%95%E6%97%A5%E5%B8%B8/R1%E6%9C%80%E7%BB%88%E7%89%88.jpg" alt="R1最终版"><br>赛后才知道与顶尖的高校之间的差距有多么的大，但今年都是有经验的人来接手，倒不至于和我一样的半吊子了。</p><p>打完比赛之后确实迷茫不知道要做什么，浑浑噩噩忙了一年就大四了，马上就是要步入社会的人，但做什么都没有动力。<br>目前手上有一个毕设在做，因为想多学点东西选择了四轴加上视觉方案，相比一般的毕设难度就多了，但也比较综合<br>软件、硬件和视觉都有用上。<br>暂时往这个项目继续努力。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>恭喜野狼队2023年robocon荣获亚军!!!</p><span id="more"></span><!-- more --><!-- ![R1伤痕累累](/2022/03/21/RC测试日常/R1伤痕累累.jpg) --><p><img src="/2022/03/21/RC%E6%B5%8B%E8%AF%95%E6%97%A5%E5%B8%B8/RC%E6%B5%8B%E8%AF%95%E6%97%A5%E5%B8%B8/R1%E4%BC%A4%E7%97%95%E7%B4%AF%E7%B4%AF.jpg" alt="R1伤痕累累"><br><img src="/2022/03/21/RC%E6%B5%8B%E8%AF%95%E6%97%A5%E5%B8%B8/RC%E6%B7%98%E5%AE%9D%E5%A1%94(%E4%B8%8D%E5%90%88%E6%A0%BC).jpg" alt="RC贵重物资"></p><h3 id="卧龙凤雏"><a href="#卧龙凤雏" class="headerlink" title="卧龙凤雏"></a>卧龙凤雏</h3><video src="/2022/03/21/RC测试日常/蜜汁夹取1.mp4" position="absolute" width="50%" height="50%" controls="controls"></video><video src="/2022/03/21/RC测试日常/蜜汁夹取2.mp4" position="absolute" width="50%" height="50%" controls="controls"></video><h3 id="步兵打球"><a href="#步兵打球" class="headerlink" title="步兵打球"></a>步兵打球</h3><video src="/2022/03/21/RC测试日常/步兵打球.mp4" position="absolute" width="50%" height="50%" controls="controls"></video><h3 id="一代摩擦轮测试"><a href="#一代摩擦轮测试" class="headerlink" title="一代摩擦轮测试"></a>一代摩擦轮测试</h3><video src="/2022/03/21/RC测试日常/一代摩擦轮测试.mp4" position="absolute" width="50%" height="50%" controls="controls"></video><h2 id="比赛结语"><a href="#比赛结语" class="headerlink" title="比赛结语"></a>比赛结语</h2><p>为期一年的比赛生涯在匆忙中也是结束了，全国一等奖，第九名，也是对自己有个交待了，纵使结果的未达最理想的状态，状况百出。队伍之间的问题也是一堆<br>但随着比赛的结束也暂时划上一个句号。<br>赛前都是闭门造车，但好在有和其他几个学校进行交流，勉强在赛前做到一个比较好的状态，这个博客在之前写了好些不满的话语，我也随着删掉了。<br>遗憾的是这次上线上的比赛，但好在没出现过和之前打RCUA那样什么忙都没帮上，这次好歹也是R1主力了。<br><img src="/2022/03/21/RC%E6%B5%8B%E8%AF%95%E6%97%A5%E5%B8%B8/R1%E6%9C%80%E7%BB%88%E7%89%88.jpg" alt="R1最终版"><br>赛后才知道与顶尖的高校之间的差距有多么的大，但今年都是有经验的人来接手，倒不至于和我一样的半吊子了。</p><p>打完比赛之后确实迷茫不知道要做什么，浑浑噩噩忙了一年就大四了，马上就是要步入社会的人，但做什么都没有动力。<br>目前手上有一个毕设在做，因为想多学点东西选择了四轴加上视觉方案，相比一般的毕设难度就多了，但也比较综合<br>软件、硬件和视觉都有用上。<br>暂时往这个项目继续努力。</p>]]></content>
     
     
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;恭喜野狼队2023年robocon荣获亚军!!!&lt;/p&gt;</summary>
     
     
     
