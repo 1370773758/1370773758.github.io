@@ -11,7 +11,7 @@
   <meta name="description" content="红外 NEC公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="红外的NEC协议使用">
-<meta property="og:url" content="https://1370773758.github.io/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/index.html">
+<meta property="og:url" content="https://1370773758.github.io/2024/01/14/%E7%BA%A2%E5%A4%96NEC/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="红外 NEC公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。">
 <meta property="og:locale" content="zh_CN">
@@ -159,7 +159,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-红外的NEC协议使用/index" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-红外NEC" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -171,7 +171,7 @@
   
 
         
-        <a href="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/" class="archive-article-date">
+        <a href="/2024/01/14/%E7%BA%A2%E5%A4%96NEC/" class="archive-article-date">
   	<time datetime="2024-01-14T15:33:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-14</time>
 </a>
         
@@ -277,7 +277,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD2ElEQVR42u3aO24jQQwFQN3/0t50AVvyeyRlKKiJjPGo1V0TUPw8HvH19d+1ufP9fnu1O3y848KBAwcOHPFRn319vqHXd77f3xwy321BjAMHDhw4jjjyTbdMLcfrwJx8Kg+6OHDgwIHj8zmS0LjJoV4H1zac48CBAweOT+NoA+qG4/Uzs0QRBw4cOHC8jyMPY20A/vtn/qhWigMHDhw4JnW8x4bjc/5+y3wHDhw4cOA4KsNtRhzyNGw/GFefDgcOHDhwrDne0QpqUdrvbXeVr48DBw4cOK442kJh3rK6DbSzQYp8bA4HDhw4cOw5kkWTBKm9nzSHZi2o/CX9sAIOHDhw4Fhz5CEqOd5V8W7Gmg/n/fIMDhw4cOBYc+QpUz7okD+zCauzUF2UBXHgwIEDR8mRh9j8qO2AwlVD6yBU48CBAweOU4626JZsdFYinCVsm18ZOHDgwIHjimPW078ad8ibRjP6FQQOHDhw4DjlSMbp9gfeNJbaZ9o0DwcOHDhw7Dlu060koUrKi7M0r315RRcOBw4cOHCMMpRZItcOScyKejPWqMSJAwcOHDiOOGatptuxg9lPgTzJjM6IAwcOHDhOOTbbev3ZYU55ml5GqSYOHDhw4DjimCVp+YbyFZLnr5pbw/iMAwcOHDgWV9scaoNxWxDMRxlmZUQcOHDgwHHF0Q6c5YnZZqBtFgdnjTEcOHDgwHHFsUlvZoF20zq6Tc9+WAEHDhw4cBxxtElanjjlgbMYaIuTwHpvOHDgwIFjzbEJbG1K1rJuWmUbVhw4cODAsed4X2kvbyDloXfflMKBAwcOHO/jyEt4+dJtspR8Yxv485f0tDiIAwcOHDgWHJuDbcYa2nJk3kAappE4cODAgWPNsbnywDkbfWiZ2nDbNsZw4MCBA0fCkQfa9pm2eDcbg2h7a1FxEAcOHDhwLDjygYa85Dcr5+WzajPcvFWGAwcOHDj2HPuCXUtZz1yUoxKbYIwDBw4cODYcm9LbZuxgFko3e47SPxw4cODAccQxK7q1gW02OjArR7arRf/GgQMHDhxx72aWROXbShK89ntnYTVaHwcOHDhwLNb/Kq+8LJh0umYBO4duwzAOHDhw4NhztKnUbLCgDcB5+pekoLOmFw4cOHDg2HC8I7i+Dnu3z++LmMWvDxw4cODAEXNsAtWm8DdrWe3Ts6cr4MCBAweOD+BoW1btENtmh20rCwcOHDhw/D3HrGDXpmqbNC9/JU/nO3DgwIEDx5ojKQ6242izgmP+kvKhh6KwiAMHDhw41hx5KW02cNAOItwOTMxeBg4cOHDgGHH8A0BW7dCUTxhzAAAAAElFTkSuQmCC" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLUlEQVR42u3aQXLCMAwFUO5/abptBzBfEukM9ssqkybYzwtXlnS7xdf917V+8vjXxzeTsW5XXBgYGF/LuC+vZFqv7l99Ox/3CRUDA+MAxnrjW09u/X51CdbjvnyOgYGBUQzs8qknS4CBgYExYay3y3zSORgDA+NkxmSLTCZdTc9deBbHwMD4QkY1Wf+f95fUNzAwML6KcS9e+S/0QszehYGBsTcj3+B6Jcw8yKuGfRgYGOcwPpvETw6uvbawN08wMDCOYZQT8ctiwKRpI2/meLLhYmBgbMdIppUHcM0h4yJBYfkwMDA2YnyqQDihJgv3ZrEwMDAOYFTbvCZBZB4sFo7NGBgYBzCq22WvwJmXCqq/gIGBcQJj0kLRHDguCSRHawwMjL0Z1cLkJFk2avmq5gsxMDC2Y1TTXnngmBcGqu0XUc4PAwNjI0Z1sF4bWS/QLKcCMTAwtmMkR838vje53sb6500MDIytGdUJ5V9Vy5+T4gQGBsY5jHwz7ZUhe60VyRwwMDDOYVRDtElzRr4chSXAwMA4gDFJk/WKmtV2ivL/DQwMjO0YvXJmL8TMWysKKTkMDIxNGZMmrby1ohp65qEhBgbGCYxqY9akhNk7mlZHxMDA2JVRHWzSwpUXD6phKAYGxgmMZCqjEmMxkVcNHDEwMDAmw+TI3lcYGBgYvc03PwznX10YGmJgYHwJI9nsekfTZNLVcBMDA+M0RrXFYVJ/yKeSt4BgYGBszfgBb0pgvqS5CQUAAAAASUVORK5CYII=" alt="微信分享二维码">
     </div>
 </div>
 
