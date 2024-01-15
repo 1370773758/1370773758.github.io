@@ -153,6 +153,86 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-红外的NEC协议使用/index" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/">红外的NEC协议使用</a>
+    </h1>
+  
+
+        
+        <a href="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/" class="archive-article-date">
+  	<time datetime="2024-01-14T15:33:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="红外-NEC"><a href="#红外-NEC" class="headerlink" title="红外 NEC"></a>红外 NEC</h2><p>公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。</p>
+        
+          <a class="article-more-a" href="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/#more">前面的区域以后再来探索吧 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">STM32</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">红外</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-pcb无人机" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -522,19 +602,19 @@
 
 
   
-    <article id="post-ROS与STM32通讯" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-ROS与STM32通讯/ROS与STM32通讯" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/">ROS与STM32通讯</a>
+      <a class="article-title" href="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/">ROS与STM32通讯</a>
     </h1>
   
 
         
-        <a href="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/" class="archive-article-date">
+        <a href="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/" class="archive-article-date">
   	<time datetime="2022-03-24T08:51:46.290Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-24</time>
 </a>
         
@@ -544,7 +624,7 @@
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一般识别的端口都是ttyUSB<em>，但像STM32芯片的，会识别成ttyACM</em>端口，但没太大关系，改就行了。<br>在运行前可以打开cutecom来查看是否有数据，但记得要给权限。</p>
         
-          <a class="article-more-a" href="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/#more">前面的区域以后再来探索吧 >></a>
+          <a class="article-more-a" href="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/#more">前面的区域以后再来探索吧 >></a>
         
       
 
@@ -572,7 +652,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/">展开全文 >></a>
         </p>
       
 
@@ -602,19 +682,19 @@
 
 
   
-    <article id="post-opencv之人脸识别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-opencv之人脸识别/opencv之人脸识别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/23/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">OpenCV  人脸识别</a>
+      <a class="article-title" href="/2022/03/23/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">OpenCV  人脸识别</a>
     </h1>
   
 
         
-        <a href="/2022/03/23/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" class="archive-article-date">
+        <a href="/2022/03/23/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" class="archive-article-date">
   	<time datetime="2022-03-23T08:10:40.240Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-23</time>
 </a>
         
@@ -649,7 +729,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2022/03/23/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/03/23/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">展开全文 >></a>
         </p>
       
 
@@ -779,72 +859,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2022/03/22/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-气缸气阀" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/22/%E6%B0%94%E7%BC%B8%E6%B0%94%E9%98%80/">气缸气阀</a>
-    </h1>
-  
-
-        
-        <a href="/2022/03/22/%E6%B0%94%E7%BC%B8%E6%B0%94%E9%98%80/" class="archive-article-date">
-  	<time datetime="2022-03-22T03:10:40.350Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在RC的比赛上，气的使用是需要掌握的第一要素，气的加入能极大的减小机构的复杂程度。</p>
-<p>队里有自己做的气缸控制阀，虽然他有点问题，还容易炸，但确实好用。能做到1个can口控制8路的气缸<br>ps：实际上不能控制8路，容易炸。</p>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>队里有专门的说明文档，还有使用代码，在需要用的地方使用就行。</p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>现在的芯片越来越贵，F1c8t6都能上200，发家致富了属于是，加上气缸控制板还有点问题，大电流一上就炸，但没办法硬件缺人，加上现在板子的设计还有点问题，后面可能用MOS管如何IO口去控制，这也是无奈之举。<br>大电流像气泵，不能直接由控制板去控制，会炸。用降压模块再接MOS管，板子IO口控制MOS管的PWM端。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/03/22/%E6%B0%94%E7%BC%B8%E6%B0%94%E9%98%80/">展开全文 >></a>
         </p>
       
 
@@ -1029,6 +1043,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">机器人</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">红外</a>
               </li>
             
             <div class="clearfix"></div>

@@ -6,24 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://1370773758.github.io">
-  <title>ROS与STM32通讯 | Hexo</title>
+  <title>Archives: 2024 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言一般识别的端口都是ttyUSB，但像STM32芯片的，会识别成ttyACM端口，但没太大关系，改就行了。在运行前可以打开cutecom来查看是否有数据，但记得要给权限。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="ROS与STM32通讯">
-<meta property="og:url" content="https://1370773758.github.io/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://1370773758.github.io/archives/2024/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前言一般识别的端口都是ttyUSB，但像STM32芯片的，会识别成ttyACM端口，但没太大关系，改就行了。在运行前可以打开cutecom来查看是否有数据，但记得要给权限。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://1370773758.github.io/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/ROS%E9%80%9A%E8%AE%AF%E7%BB%93%E6%9E%9C.png">
-<meta property="og:image" content="https://1370773758.github.io/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png">
-<meta property="article:published_time" content="2022-03-24T08:51:46.290Z">
-<meta property="article:modified_time" content="2022-03-24T11:17:02.000Z">
 <meta property="article:author" content="吴金洲">
-<meta property="article:tag" content="ROS">
-<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://1370773758.github.io/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/ROS%E9%80%9A%E8%AE%AF%E7%BB%93%E6%9E%9C.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -160,188 +151,64 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-ROS与STM32通讯" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      ROS与STM32通讯
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2024" class="archive-year">2024</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/" class="archive-article-date">
+  	<time datetime="2024-01-14T15:33:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-14</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/">红外的NEC协议使用</a>
     </h1>
   
 
-        
-        <a href="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/" class="archive-article-date">
-  	<time datetime="2022-03-24T08:51:46.290Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一般识别的端口都是ttyUSB<em>，但像STM32芯片的，会识别成ttyACM</em>端口，但没太大关系，改就行了。<br>在运行前可以打开cutecom来查看是否有数据，但记得要给权限。</p>
-<span id="more"></span>
-<!-- more -->
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cutecom</span><br></pre></td></tr></table></figure>
-<p><img src="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/ROS%E9%80%9A%E8%AE%AF%E7%BB%93%E6%9E%9C.png" alt="ROS通讯结果"></p>
-<h2 id="ROS代码"><a href="#ROS代码" class="headerlink" title="ROS代码"></a>ROS代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;ros/ros.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;serial/serial.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    ros::init(argc, argv, <span class="string">&quot;serial_port&quot;</span>);</span><br><span class="line">    //创建句柄（虽然后面没用到这个句柄，但如果不创建，运行时进程会出错）</span><br><span class="line">    ros::NodeHandle n;</span><br><span class="line">    //创建一个serial类</span><br><span class="line">    serial::Serial sp;</span><br><span class="line">    //创建<span class="built_in">timeout</span></span><br><span class="line">    serial::Timeout to = serial::Timeout::simpleTimeout(100);</span><br><span class="line">    //设置要打开的串口名称</span><br><span class="line">    sp.setPort(<span class="string">&quot;/dev/ttyACM0&quot;</span>);</span><br><span class="line">    //设置串口通信的波特率</span><br><span class="line">    sp.setBaudrate(115200);</span><br><span class="line">    //串口设置<span class="built_in">timeout</span></span><br><span class="line">    sp.setTimeout(to);</span><br><span class="line"></span><br><span class="line">    // try</span><br><span class="line">    // &#123;</span><br><span class="line">        //打开串口</span><br><span class="line">    sp.open();</span><br><span class="line">    // &#125;</span><br><span class="line">    // catch(serial::IOException&amp; e)</span><br><span class="line">    // &#123;</span><br><span class="line">    //     ROS_ERROR_STREAM(<span class="string">&quot;Unable to open port.&quot;</span>);</span><br><span class="line">    //     <span class="built_in">return</span> -1;</span><br><span class="line">    // &#125;</span><br><span class="line"></span><br><span class="line">    //判断串口是否打开成功</span><br><span class="line">    <span class="keyword">if</span>(sp.isOpen())</span><br><span class="line">    &#123;</span><br><span class="line">        ROS_INFO_STREAM(<span class="string">&quot;/dev/ttyUSB0 is opened.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">return</span> -1;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    ros::Rate loop_rate(500);</span><br><span class="line">    <span class="keyword">while</span>(ros::ok())</span><br><span class="line">    &#123;</span><br><span class="line">        //获取缓冲区内的字节数</span><br><span class="line">        size_t n = sp.available();</span><br><span class="line">        <span class="keyword">if</span>(n!=0)</span><br><span class="line">        &#123;</span><br><span class="line">            uint8_t buffer[1024];</span><br><span class="line">            //读出数据</span><br><span class="line">            n = sp.read(buffer, n);</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">for</span>(int i=0; i&lt;n; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                //16进制的方式打印到屏幕</span><br><span class="line">                std::cout &lt;&lt; <span class="string">std::hex &lt;&lt; (buffer[i] &amp; 0xff) &lt;&lt; &quot; &quot;;</span></span><br><span class="line"><span class="string">            &#125;</span></span><br><span class="line"><span class="string">            std</span>::cout &lt;&lt; <span class="string">std::endl;</span></span><br><span class="line"><span class="string">            //把数据发送回去</span></span><br><span class="line"><span class="string">            //sp.write(buffer, n);</span></span><br><span class="line"><span class="string">        &#125;</span></span><br><span class="line"><span class="string">        loop_rate.sleep();</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    //关闭串口</span></span><br><span class="line"><span class="string">    sp.close();</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    return 0;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
-<h2 id="STM32代码"><a href="#STM32代码" class="headerlink" title="STM32代码"></a>STM32代码</h2><h2 id="执行效果"><a href="#执行效果" class="headerlink" title="执行效果"></a>执行效果</h2><p>在执行前，需要给端口权限，再进行cpp的运行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">chmod</span> 777 /dev/ttyACM*</span><br></pre></td></tr></table></figure>
-<p>ps: 在每次文件更改后记得catkin_make下<br><img src="/2022/03/24/ROS%E4%B8%8ESTM32%E9%80%9A%E8%AE%AF/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png" alt="运行结果"></p>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>懒得设置又想要钱<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ROS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">STM32</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">红外</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACxElEQVR42u3a0W7CMAwFUP7/p5m0JyZoe20nDKTTJ1TRkpNJiXed2y2+7r/X4+ejO4/3n5/Nf+X5fv6e8oWHh4fXGvrRlQPOp+AIcD7053fmY8bDw8PbzZu/OgdPfjEfMx4eHt4n8M6L2mRrSSYrIeHh4eF9Ly8ZRL4l4OHh4X0XL1/W8zvJ5pFsG2/KWvDw8PBiXq8B9r+ft/f38PDw8Fpd9XzxnQQQCaM5Qjw8PLwNvDxUzRl5y6oQKLQCCzw8PLx9vF4raxLg5oDexoOHh4f3Hl6y4CYbQB7srvprRE/h4eHhLeX1oodeTFBtvFWn/jCMwMPDw9vGS5b7ycKdlMj5MYXyyQg8PDy8pbwkbJ03t3qlcx4TRw0wPDw8vAEvX4jz+KCQFrdOTxW2EDw8PLwNvGrzqXc4oHeIqlrKF8JcPDw8vAGvEIYGAe6qxlWvgI7+V8DDw8Mb85ISNg8LqrFFXhyvnVY8PDy8Ca83E9VIohp25DHuxTfx8PDwNvDywvp8k8jjg+TQQD7dy/5vwMPDw4t51TAiL7iTUCPHVJNpPDw8vH28PCzoBazV7aHXWruYbjw8PLylvGqzKi9zq1tI9aRDFDHj4eHhbeDlIWxS/laL7LxJVj2IgIeHh/ceXt7E6lGrG0l+vOBik8DDw8Nbypu0vu7x1TtcNWmh4eHh4e3jVYvU+RTM71djCzw8PLy1vPkGkE9E3uzvhb8vnsLDw8PbwEuCiV7DLB9KHvX2GnV4eHh4a3n34tU7aNVbxHsF+p9n8fDw8Dbweov7eRQ7ufKQt1qC4+Hh4a3l7d4M8u/kYyi0vvDw8PC28SbHoZrN+0UF8UWEgYeHh/cBvISRl+D59pNvGHh4eHifw1sbXkzC30LrDg8PD28brxdGVIdbfUP1zuHGgIeHh7eUNz84lR87qC7xSeG+uL+Hh4eHd/ZbP8YWsYY+lI4dAAAAAElFTkSuQmCC" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2022/03/26/%E5%A7%9A%E8%88%B5%E8%BD%AE%E4%BB%A3%E7%A0%81/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          舵轮代码解读
-        
-      </div>
-    </a>
   
   
-    <a href="/2022/03/23/opencv%E4%B9%8B%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">OpenCV  人脸识别</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -364,8 +231,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
@@ -492,6 +359,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">机器人</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">红外</a>
               </li>
             
             <div class="clearfix"></div>

@@ -6,15 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://1370773758.github.io">
-  <title>Archives: 2022/10 | Hexo</title>
+  <title>红外的NEC协议使用 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://1370773758.github.io/archives/2022/10/index.html">
+  <meta name="description" content="红外 NEC公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="红外的NEC协议使用">
+<meta property="og:url" content="https://1370773758.github.io/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="红外 NEC公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://1370773758.github.io/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg">
+<meta property="article:published_time" content="2024-01-14T15:33:04.000Z">
+<meta property="article:modified_time" content="2024-01-14T16:03:46.770Z">
 <meta property="article:author" content="吴金洲">
+<meta property="article:tag" content="STM32">
+<meta property="article:tag" content="红外">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1370773758.github.io/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -151,87 +159,174 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-红外的NEC协议使用/index" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/10/31/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" class="archive-article-date">
-  	<time datetime="2022-10-31T14:11:28.556Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/10/31/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/">学习资料</a>
+    <h1 class="article-title" itemprop="name">
+      红外的NEC协议使用
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/10/16/%E8%AE%B0%E5%BD%95%E6%9C%AC/" class="archive-article-date">
-  	<time datetime="2022-10-16T15:43:24.330Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-16</time>
+        
+        <a href="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index/" class="archive-article-date">
+  	<time datetime="2024-01-14T15:33:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-14</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/10/16/%E8%AE%B0%E5%BD%95%E6%9C%AC/">记录本</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="红外-NEC"><a href="#红外-NEC" class="headerlink" title="红外 NEC"></a>红外 NEC</h2><p>公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。</p>
+<span id="more"></span>
+<h2 id="NEC红外协议"><a href="#NEC红外协议" class="headerlink" title="NEC红外协议"></a>NEC红外协议</h2><p>NEC协议部分主要由 引导码、用户码、用户反码、数据码、数据反码、结束码 组成</p>
+<h3 id="NEC-数据码"><a href="#NEC-数据码" class="headerlink" title="NEC 数据码"></a>NEC 数据码</h3><p><img src="/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg" alt="数据码原理"></p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>懒得设置又想要钱<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日常</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">STM32</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">红外</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD2ElEQVR42u3aO24jQQwFQN3/0t50AVvyeyRlKKiJjPGo1V0TUPw8HvH19d+1ufP9fnu1O3y848KBAwcOHPFRn319vqHXd77f3xwy321BjAMHDhw4jjjyTbdMLcfrwJx8Kg+6OHDgwIHj8zmS0LjJoV4H1zac48CBAweOT+NoA+qG4/Uzs0QRBw4cOHC8jyMPY20A/vtn/qhWigMHDhw4JnW8x4bjc/5+y3wHDhw4cOA4KsNtRhzyNGw/GFefDgcOHDhwrDne0QpqUdrvbXeVr48DBw4cOK442kJh3rK6DbSzQYp8bA4HDhw4cOw5kkWTBKm9nzSHZi2o/CX9sAIOHDhw4Fhz5CEqOd5V8W7Gmg/n/fIMDhw4cOBYc+QpUz7okD+zCauzUF2UBXHgwIEDR8mRh9j8qO2AwlVD6yBU48CBAweOU4626JZsdFYinCVsm18ZOHDgwIHjimPW078ad8ibRjP6FQQOHDhw4DjlSMbp9gfeNJbaZ9o0DwcOHDhw7Dlu060koUrKi7M0r315RRcOBw4cOHCMMpRZItcOScyKejPWqMSJAwcOHDiOOGatptuxg9lPgTzJjM6IAwcOHDhOOTbbev3ZYU55ml5GqSYOHDhw4DjimCVp+YbyFZLnr5pbw/iMAwcOHDgWV9scaoNxWxDMRxlmZUQcOHDgwHHF0Q6c5YnZZqBtFgdnjTEcOHDgwHHFsUlvZoF20zq6Tc9+WAEHDhw4cBxxtElanjjlgbMYaIuTwHpvOHDgwIFjzbEJbG1K1rJuWmUbVhw4cODAsed4X2kvbyDloXfflMKBAwcOHO/jyEt4+dJtspR8Yxv485f0tDiIAwcOHDgWHJuDbcYa2nJk3kAappE4cODAgWPNsbnywDkbfWiZ2nDbNsZw4MCBA0fCkQfa9pm2eDcbg2h7a1FxEAcOHDhwLDjygYa85Dcr5+WzajPcvFWGAwcOHDj2HPuCXUtZz1yUoxKbYIwDBw4cODYcm9LbZuxgFko3e47SPxw4cODAccQxK7q1gW02OjArR7arRf/GgQMHDhxx72aWROXbShK89ntnYTVaHwcOHDhwLNb/Kq+8LJh0umYBO4duwzAOHDhw4NhztKnUbLCgDcB5+pekoLOmFw4cOHDg2HC8I7i+Dnu3z++LmMWvDxw4cODAEXNsAtWm8DdrWe3Ts6cr4MCBAweOD+BoW1btENtmh20rCwcOHDhw/D3HrGDXpmqbNC9/JU/nO3DgwIEDx5ojKQ6242izgmP+kvKhh6KwiAMHDhw41hx5KW02cNAOItwOTMxeBg4cOHDgGHH8A0BW7dCUTxhzAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2023/08/14/pcb%E6%97%A0%E4%BA%BA%E6%9C%BA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">pcb无人机</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -254,8 +349,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
