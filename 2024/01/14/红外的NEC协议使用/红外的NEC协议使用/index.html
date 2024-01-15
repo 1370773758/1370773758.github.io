@@ -15,14 +15,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="红外 NEC公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://1370773758.github.io/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg">
+<meta property="og:image" content="https://1370773758.github.io/imges/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.png">
 <meta property="article:published_time" content="2024-01-14T15:33:04.000Z">
-<meta property="article:modified_time" content="2024-01-15T15:47:06.128Z">
+<meta property="article:modified_time" content="2024-01-15T15:59:27.147Z">
 <meta property="article:author" content="吴金洲">
 <meta property="article:tag" content="STM32">
 <meta property="article:tag" content="红外">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://1370773758.github.io/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg">
+<meta name="twitter:image" content="https://1370773758.github.io/imges/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -182,7 +182,7 @@
         <h2 id="红外-NEC"><a href="#红外-NEC" class="headerlink" title="红外 NEC"></a>红外 NEC</h2><p>公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。</p>
 <span id="more"></span>
 <h2 id="NEC红外协议"><a href="#NEC红外协议" class="headerlink" title="NEC红外协议"></a>NEC红外协议</h2><p>NEC协议部分主要由 引导码、用户码、用户反码、数据码、数据反码、结束码 组成</p>
-<h3 id="NEC-数据码"><a href="#NEC-数据码" class="headerlink" title="NEC 数据码"></a>NEC 数据码</h3><p><img src="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg" alt="数据码原理"></p>
+<h3 id="NEC-数据码"><a href="#NEC-数据码" class="headerlink" title="NEC 数据码"></a>NEC 数据码</h3><p><img src="/imges/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.png" alt="数据码原理"></p>
 
       
 
