@@ -11,18 +11,18 @@
   <meta name="description" content="红外 NEC公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="红外的NEC协议使用">
-<meta property="og:url" content="https://1370773758.github.io/2024/01/14/%E7%BA%A2%E5%A4%96NEC/index.html">
+<meta property="og:url" content="https://1370773758.github.io/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="红外 NEC公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://1370773758.github.io/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg">
+<meta property="og:image" content="https://1370773758.github.io/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg">
 <meta property="article:published_time" content="2024-01-14T15:33:04.000Z">
-<meta property="article:modified_time" content="2024-01-14T16:03:46.770Z">
+<meta property="article:modified_time" content="2024-01-15T15:47:06.128Z">
 <meta property="article:author" content="吴金洲">
 <meta property="article:tag" content="STM32">
 <meta property="article:tag" content="红外">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://1370773758.github.io/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg">
+<meta name="twitter:image" content="https://1370773758.github.io/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -159,7 +159,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-红外NEC" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-红外的NEC协议使用/红外的NEC协议使用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -171,7 +171,7 @@
   
 
         
-        <a href="/2024/01/14/%E7%BA%A2%E5%A4%96NEC/" class="archive-article-date">
+        <a href="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/" class="archive-article-date">
   	<time datetime="2024-01-14T15:33:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-14</time>
 </a>
         
@@ -182,7 +182,7 @@
         <h2 id="红外-NEC"><a href="#红外-NEC" class="headerlink" title="红外 NEC"></a>红外 NEC</h2><p>公司之前使用的红外是使用ST库中的串口红外协议，协议层是由库来完成，而使用只需要像使用串口那样使用。而新项目中使用的接收头是由成本更低的元器件来实现，不能像之前使用串口红外的协议，原因是接收头协议不兼容，使用IRDA协议的话波形会被滤掉，而接收头接收的时38KHz的载波为低电平，LED为发送端。</p>
 <span id="more"></span>
 <h2 id="NEC红外协议"><a href="#NEC红外协议" class="headerlink" title="NEC红外协议"></a>NEC红外协议</h2><p>NEC协议部分主要由 引导码、用户码、用户反码、数据码、数据反码、结束码 组成</p>
-<h3 id="NEC-数据码"><a href="#NEC-数据码" class="headerlink" title="NEC 数据码"></a>NEC 数据码</h3><p><img src="/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg" alt="数据码原理"></p>
+<h3 id="NEC-数据码"><a href="#NEC-数据码" class="headerlink" title="NEC 数据码"></a>NEC 数据码</h3><p><img src="/2024/01/14/%E7%BA%A2%E5%A4%96%E7%9A%84NEC%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8/nec%E6%95%B0%E6%8D%AE%E7%A0%810%E5%92%8C1.jpg" alt="数据码原理"></p>
 
       
 
@@ -277,7 +277,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLUlEQVR42u3aQXLCMAwFUO5/abptBzBfEukM9ssqkybYzwtXlnS7xdf917V+8vjXxzeTsW5XXBgYGF/LuC+vZFqv7l99Ox/3CRUDA+MAxnrjW09u/X51CdbjvnyOgYGBUQzs8qknS4CBgYExYay3y3zSORgDA+NkxmSLTCZdTc9deBbHwMD4QkY1Wf+f95fUNzAwML6KcS9e+S/0QszehYGBsTcj3+B6Jcw8yKuGfRgYGOcwPpvETw6uvbawN08wMDCOYZQT8ctiwKRpI2/meLLhYmBgbMdIppUHcM0h4yJBYfkwMDA2YnyqQDihJgv3ZrEwMDAOYFTbvCZBZB4sFo7NGBgYBzCq22WvwJmXCqq/gIGBcQJj0kLRHDguCSRHawwMjL0Z1cLkJFk2avmq5gsxMDC2Y1TTXnngmBcGqu0XUc4PAwNjI0Z1sF4bWS/QLKcCMTAwtmMkR838vje53sb6500MDIytGdUJ5V9Vy5+T4gQGBsY5jHwz7ZUhe60VyRwwMDDOYVRDtElzRr4chSXAwMA4gDFJk/WKmtV2ivL/DQwMjO0YvXJmL8TMWysKKTkMDIxNGZMmrby1ohp65qEhBgbGCYxqY9akhNk7mlZHxMDA2JVRHWzSwpUXD6phKAYGxgmMZCqjEmMxkVcNHDEwMDAmw+TI3lcYGBgYvc03PwznX10YGmJgYHwJI9nsekfTZNLVcBMDA+M0RrXFYVJ/yKeSt4BgYGBszfgBb0pgvqS5CQUAAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+CAAAAAAxUyPsAAAFXUlEQVR42u3c0WrlRhAEUP//TycQ9iHBWK6qlgnJHj1dbHkknbmgnurZ/fiIjz/+Ov7++fNPPv/285mfx9zG+Tzm8xWfx3m+zxcOfPjw4cOH73Ho5DLJTTyj5w+QT95X53915vOY0VcBHz58+PDhm/i2m35GeR4zudYzd87XTm1x//jw4cOHD9+P8bXL/rx8aa+bBAft+Pjw4cOHD99/ha9lyguFtnmwXfdfLlzw4cOHD99vyZe3pfOmcn6j2yI/n8KtzfByrwMfPnz48OE7FAr/788vH/jw4cOHD1/wem6X08kSvY0b8i1u98muNfDhw4cPH75F4+PClEfkSUBwKaou7fn2SSMCfPjw4cOH75EvKQIuxUe+mWwL6/OC5t5Ex4cPHz58+O58SeGyta63ECH5bbvsb6ch+jLhw4cPHz58Ux3SvrDzcqSNEvKipy282tKqCDXw4cOHDx++V2P6dvGfn3OZgLao2rBeaJDjw4cPHz588et/C9wvx2V7Wd6EuMQi/9jfhw8fPnz48B34krg8X9jnPeVt8Z8f7eaAKDjAhw8fPnz4Sr72IfNF+FZYtNvatrBjCy+K4gwfPnz48OF77PO2DeYcpQ3Bt3IkjwbyAmWs+/Dhw4cPH76Ary0RLs3mjXgL67dmQFHi4MOHDx8+fAe+7cX//BiXcqctMvI7yaOBbyYJHz58+PDhO/Plw7Vt73dX2XkXog0ditY+Pnz48OHDt+wKGzds3Rf/b4URWymTtBCK8g4fPnz48OEL+PIIoP35vd3e1gZ5mXXZlveR5xz48OHDhw9fvJzOW9T3wiJf/F9Ac8rirvDhw4cPH75X+bZztsggn857S6Ata6JeBz58+PDhwze1ydulexuFb2HBvSXfNiGiIgkfPnz48OGb1tf1CztulrfL+y003+L+7brf7C/Ahw8fPnz44qS9/bN2e1kb9ydkbaixPW80Pfjw4cOHD1/Aly/pL23y9rbaqH0rqvKNd1/eLT58+PDhw1fyXSLsFqiN8ttgIpnmuppLCiN8+PDhw4fvVb52g1deBuUc+Qa4rTGfs9aFCz58+PDhwxdEBm3k3Yb724p7i+AvJdeYuODDhw8fPnyPfHkjvH215030/FHzpnhS+mzhwq/P+PDhw4cP34HvQnNpb2/t8Dxkb+OMomGPDx8+fPjwnfnyB2vb2JcGed6Mf+vLET0XPnz48OHDV/K1L/i8rX5fnCehQBsTtBMZlUr48OHDhw9fzHdvhLcN6Xapf2nJvxVMfDkCPnz48OHDd+DbNnVtf7tNQ7vgbxHzv4p2GeDDhw8fPnxfCOQt5HYZn4zQbia7BxntdEbBAT58+PDhwxfwbYMmF7hvcdsa89sI4zj48OHDhw/fPs74X3rlE5CUBfmk5iO3Z7ZFFT58+PDhw9fyFa/nMkpomwF5EN+WIHmoUTck8OHDhw8fvqWXPf6TpLZcaEuQdiNaGyi0TYio7sOHDx8+fPgOfJejLWXa6PzedL+0z/Hhw4cPH76WL7+hdsmdFCKXJnq7PW4rifDhw4cPH76f4Lss+99qbLdl01txwKUgw4cPHz58+O58lyX3Fta3Uf69MNq+BPVOAXz48OHDh+/+qi4Lha0l0LbG21Z3e90Xih58+PDhw4cvLl8uDey8INha1/k0b033aALw4cOHDx++ia99kf8cfU6T3+elmvumMMKHDx8+fPh+jK/d4JXH5W3QcAkF7oH+OKv48OHDhw/fmW8LAtoQv3iYQ0Ezfl3w4cOHDx++iS9f9idL8a0oaR+yRUyw8vgeHz58+PDh2/jaoPzdZvkWELRL/Ry6Lcjw4cOHDx++mO9PW3Gaqisr9EcAAAAASUVORK5CYII=" alt="微信分享二维码">
     </div>
 </div>
 
